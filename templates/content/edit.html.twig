@@ -1,0 +1,18 @@
+{% extends 'master.html.twig' %}
+{% block page_content %}
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Edit Content</h3>
+        </div>
+        <!-- /.card-header -->
+        <!-- form start -->
+        {{ form_start(form) }}
+        {% include 'content/_form.html.twig' %}
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}
